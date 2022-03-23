@@ -7,4 +7,8 @@ Here’s the `_config.paperwhite.yml`
 menu:
   writing: /
   who am I?: /about
+
+giscus:
+  enable: true
+  repo: aeilot/en
 ```
