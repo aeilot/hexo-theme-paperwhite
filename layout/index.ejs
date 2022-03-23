@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <%- partial('_partial/head') %>
+  <body>
+    <main class="container">
+    <%- partial('_partial/header') %>
+    <section class="posts">
+      <% page.posts.each(function (post) { %>
+      <article class="post">
+        <div class="post-title">
+          <a class="post-title-link" href="<%- url_for(post.path) %>"
+            ><%= post.title %></a
+          >
+        </div>
+        <div class="post-meta">
+          <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+          <!-- <% if (page.categories && page.categories.length) { %>
+                <p>|</p>
+                <%- list_categories(page.categories, { show_count: false, style: 'link', separator: ' › ' }) %>
+          <% } %>
+          <% if (page.tags && page.tags.length) { %>
+            <p>|</p>
+                <%- list_tags(page.tags, { show_count: false, style: 'link' }) %>
+        <% } %> -->
+        </div>
+        <div class="post-content"><%- post.excerpt %></div>
+      </article>
+      <% }) %>
+    </section>
+    <%- partial('_partial/paginator') %>
+    <%- partial('_partial/footer') %>
+  </main>
+  </body>
+</html>

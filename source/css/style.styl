@@ -1,0 +1,115 @@
+:root {
+--waline-font-size: 16px;
+--waline-white: #fff;
+--waline-light-grey: #999;
+--waline-dark-grey: #666;
+--waline-theme-color: #27ae60;
+--waline-active-color: #2ecc71;
+--waline-text-color: #444;
+--waline-bgcolor: #fff;
+--waline-bgcolor-light: #f8f8f8;
+--waline-bgcolor-hover: #f0f0f0;
+--waline-border-color: #ddd;
+--waline-disable-bgcolor: #f8f8f8;
+--waline-disable-color: #000;
+--waline-code-bgcolor: #282c34;
+--waline-bq-color: #f0f0f0;
+--waline-avatar-size: 3.25rem;
+--waline-mobile-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+--waline-badge-color: #3498db;
+--waline-badge-font-size: 0.775em;
+--waline-info-bgcolor: #f8f8f8;
+--waline-info-color: #999;
+--waline-info-font-size: 0.625em;
+--waline-border: 1px solid var(--waline-border-color);
+--waline-avatar-radius: 50%;
+--waline-box-shadow: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+    a {
+        text-decoration: underline;
+        color: #444;
+
+        &:hover {
+            text-decoration: underline;
+            transition: 1s;
+            color: #111;
+        }
+    }
+
+body p {
+    -webkit-font-smoothing: antialiased;
+}
+
+body h1,
+body h2,
+body h3 {
+    line-height: 1.2;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+img, article,figure,pre,video,iframe{
+    max-width: 50em;
+}
+
+.footer{
+    text-align: center;
+    color: #bababa;
+}
+
+.container .highlight {
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: var(--body-bg);
+    border-radius: 15px;
+    max-width: calc(800px - 16px * 2);
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.page-nav{
+    text-align: center;
+}
+
+.page-nav>a{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.giscus{
+    text-align: center;
+    padding: 0 50px;
+    max-width: calc(50em - 2 * 50px) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+@import "_partial/header";
+@import "_partial/post";

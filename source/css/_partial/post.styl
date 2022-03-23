@@ -1,0 +1,51 @@
+.post {
+    margin: 1em auto;
+    padding: 30px 50px;
+}
+
+.posts {
+    .post:first-child {
+        margin-top: 0;
+    }
+
+    .post-title {
+        font-size: 1.5em;
+
+        &::before {
+            content: '#';
+            color: #bababa;
+        }
+
+        &:hover::before {
+            color: #111;
+        }
+
+        .post-title-link {
+            color: #111;
+            text-decoration: none;
+        }
+    }
+
+    .post-content {
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+    }
+
+
+}
+.post-time{
+    color: #BABABA;
+}
+blockquote {
+    border-left: 4px solid #ddd;
+    color: var(--blockquote-color);
+    margin: 0;
+    padding: 0 15px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
