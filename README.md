@@ -1,2 +1,10 @@
-# hexo-theme-paperwhite
+# Hexo Theme Paperwhite
 A minimalist theme
+
+## Configuration
+Here’s the `_config.paperwhite.yml`
+```yml
+menu:
+  writing: /
+  who am I?: /about
+```
