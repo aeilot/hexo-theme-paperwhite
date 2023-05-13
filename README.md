@@ -14,5 +14,5 @@ menu:
 
 giscus:
   enable: true
-  repo: aeilot/en
+  repo: # your repo
 ```
