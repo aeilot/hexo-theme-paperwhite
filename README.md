@@ -1,7 +1,3 @@
-# NOTE: THIS PROJECT IS NO LONGER ACTIVELY MAINTAINED. MY BLOG HAS RECENTLY SWITCHED TO HEXO-THEME-CACTUS
-
-https://github.com/probberechts/hexo-theme-cactus
-
 # Hexo Theme Paperwhite
 A minimalist theme
 
