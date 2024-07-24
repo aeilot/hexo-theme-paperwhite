@@ -1,0 +1,5 @@
+<% if (page.tags && page.tags.length) { %>
+    <div class="article-tag">
+        <p> TAGS: <%- list_tags(page.tags, { show_count: false, style: 'link' }) %> </p>
+    </div>
+<% } %>

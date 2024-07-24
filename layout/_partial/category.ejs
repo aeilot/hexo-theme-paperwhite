@@ -1,0 +1,5 @@
+<% if (page.categories && page.categories.length) { %>
+    <div class="article-category">
+        <p> CATEGORIES: <%- list_categories(page.categories, { show_count: false, style: 'link', separator: ' › ' }) %></p>
+    </div>
+<% } %>

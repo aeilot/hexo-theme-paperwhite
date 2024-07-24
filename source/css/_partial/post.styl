@@ -8,12 +8,16 @@
         margin-top: 0;
     }
 
+    .post-meta{
+        line-height: 0.5;  !important
+    }
+
     .post-title {
-        font-size: 1.5em;
+        font-size: 2em;
 
         &::before {
             content: '#';
-            color: #bababa;
+            color: #717485;
         }
 
         &:hover::before {
@@ -36,7 +40,7 @@
 
 }
 .post-time{
-    color: #BABABA;
+    color: #717485;
 }
 blockquote {
     border-left: 4px solid #ddd;
@@ -48,4 +52,13 @@ blockquote {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+}
+
+code{
+    background: #eee;
+    border-radius: 3px;
+    color: #555;
+    padding: 2px 4px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
