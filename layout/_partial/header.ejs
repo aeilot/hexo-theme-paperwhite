@@ -1,7 +1,7 @@
 <header class="header">
     <div class="blog-title">
         <h1><a href="<%- url_for() %>"><%= config.title %></a></h1>
-        <p class="description"><%= config.description %></p>
+        <p class="description"><%- markdown(config.description) %></p>
     </div>
     <nav class="navbar">
         <ul class="menu">
