@@ -17,7 +17,7 @@
           <div class="post-content"><%- page.content %></div
 
         </article>
-        <% if (theme.giscus.enable) { %>
+        <% if (theme.giscus && theme.giscus.enable) { %>
         <script src="https://giscus.app/client.js"
           data-repo=  <%= theme.giscus.repo %>
           data-repo-id="MDEwOlJlcG9zaXRvcnkzNTIwMzg4MTk="
